@@ -1,0 +1,21 @@
+.banner_image{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.banner_container{
+    margin-top: 20px;
+    background-image: url("../asset/banner5.jpg");
+    padding-top: 20px;
+    padding-bottom: 50px;
+    box-shadow: 0px 2px 3px rgba(41, 96, 178, 0.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
+}
+
+.banner_title{
+    margin-bottom: 35px;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0px 2px 3px rgba(41, 96, 178, 0.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
+
+}
