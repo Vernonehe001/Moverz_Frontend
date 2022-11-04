@@ -114,27 +114,33 @@ const SearchForm = () => {
                         
             :
             (
-              <div>
+              <div className='product_item_container'>
               <Container className='product_main_container' >
-                   <Row className='product_top'>          
-                    <Col md="auto" className='product_status'><p>{product._id} </p></Col>          
-                    <Col md="auto" className='product_status'><p>{product.product_status} </p></Col>
-                    <Col md="auto" className='product_status'><p>{product.delivered_date} </p></Col>
-                    
+                   <Col className='parent_sub-container'>
+                   <Col md="auto" className='product_id_header'><p>{product._id} </p></Col>   
+                   <Col md="auto" className='product_delivery-date'><p>{product.delivered_date} </p></Col>
+                   </Col>
+
+
+                   <Row className='parent_row'>
+                   <Row className='product_top'>                                     
+                    <Col md="auto" className='product_status'><p>{product.product_status} </p></Col>                    
+                   </Row>
+
+                   <Row className='country_row'>
+                   <Col><p>{product.product_source}</p></Col>
                    </Row>
            
                   
                     <Row className='product_loc_container'>
                     <Col>{product.product_packages} </Col>
                     <Col>{product.product_description} </Col>
-                    <Col><p>{product.product_origin}</p></Col>
+
                     <Col>{product.product_destination} </Col>
                    </Row>
            
                    <Row className='product_address_container'>
-                       <p>
-                      {product.product_source}
-                       </p>
+                       
                        <Col md="auto" >{product.product_description} </Col>
                        <Col md="auto" >{product.product_weight} </Col>
                     
@@ -151,7 +157,8 @@ const SearchForm = () => {
                        <p>{product.product_reference} </p>
                        <p>{product.productID} </p>
                    </Row>
-                   
+               
+                    </Row>    
                        
               </Container>
               </div>
