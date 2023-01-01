@@ -17,6 +17,7 @@ const SearchForm = () => {
   const [productId, setProductId] = useState("");
   const [isLoading, setIsLoading] = useState(false);
 
+  // https://moverzbackend.herokuapp.com/api/products/${productId}
  
 
   //635e954680ce1128231e760b
@@ -29,7 +30,7 @@ const SearchForm = () => {
   const getProductItem = (e)=> {
     e.preventDefault()
    
-    fetch(`https://moverzbackend.herokuapp.com/api/products/${productId}`)
+    fetch(`https://testengin.onrender.com/api/products/${productId}`)
     .then((response)=> response.json())
     .then((json)=>setProduct(json))
     .catch((error)=> console.log(error))
